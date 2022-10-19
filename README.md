@@ -1,1 +1,3 @@
 # clonebank
+
+interface bank
