@@ -8,7 +8,7 @@ import {
 import Header from "../../components/Header";
 import Balance from "../../components/Balance";
 import Movements from "../../components/Movements";
-
+import Actions from "../../components/Actions";
 
 const list = [
   {
@@ -41,6 +41,7 @@ export default function Home() {
       <View style={styles.container}>
         <Header name="Teste"/>
         <Balance saldo="15.400,00" gastos="-4.056,95"/>
+        <Actions/>
         <Text style={styles.movtitle}>Últimas Movimentações</Text>
         <FlatList
           style={styles.listmov}
@@ -61,10 +62,7 @@ export default function Home() {
     movtitle:{
       fontSize: 20,
       fontWeight: 'bold',
-      marginLeft: 14,
-      marginRight: 14,
-      marginTop: 14,
-      marginBottom: 14,
+      margin: 14
     },
     listmov:{
       marginStart: 14,
